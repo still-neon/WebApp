@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginServlet extends HttpServlet {
     private Map<String,String> creds = new HashMap<String,String>();
 
-
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         creds.put("login","password");
         String username = (String) request.getParameter("username");
@@ -24,7 +23,5 @@ public class LoginServlet extends HttpServlet {
         } else {
             getServletContext().getRequestDispatcher("/index.html");
         }
-
-
     }
 }
