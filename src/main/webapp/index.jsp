@@ -1,5 +1,6 @@
+<%@ page import="java.util.Date" %>
 <html>
 <body>
-<p>Welcome! Time: <%= new java.util.Timer()%><p>
+<p>Welcome! Time: <%= new Date().toString() %><p>
 </body>
 </html>

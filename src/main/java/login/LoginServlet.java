@@ -18,6 +18,7 @@ public class LoginServlet extends HttpServlet {
         String password = (String) request.getParameter("password");
         creds.get(username);
 
+
         if(creds.get(username).equals(password)) {
             getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
         } else {
