@@ -13,7 +13,7 @@
 
   <filter-mapping>
     <filter-name>JSPFilter</filter-name>
-    <url-pattern>/22welcome_page1.jsp</url-pattern>
+    <url-pattern>*.jsp</url-pattern>
   </filter-mapping>
 
   <welcome-file-list>
