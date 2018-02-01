@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41196d2b-ecaf-4a88-b7a8-6dfba9be280b" name="Default" comment="Merge branch 'master' of https://github.com/still-neon/WebApp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/login_page.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/welcome_page.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/WEB-INF/classes/webapplication/ConnectionFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/WEB-INF/classes/webapplication/UserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/WEB-INF/classes/webapplication/UserInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/WEB-INF/classes/webapplication/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/WEB-INF/classes/webapplication/UserServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/WEB-INF/classes/webapplication/filters/JSPFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/WEB-INF/lib/javaee-api-5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/login_page.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MyWebApp2.0/welcome_page.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/webapplication/ConnectionFactory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/webapplication/UserDAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/webapplication/UserInfo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/webapplication/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/webapplication/UserServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/webapplication/filters/JSPFilter.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="41196d2b-ecaf-4a88-b7a8-6dfba9be280b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -917,7 +897,7 @@
       <workItem from="1517411082223" duration="435000" />
       <workItem from="1517411691286" duration="3924000" />
       <workItem from="1517472541821" duration="188000" />
-      <workItem from="1517473754550" duration="2415000" />
+      <workItem from="1517473754550" duration="3102000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1516865032718</created>
@@ -975,11 +955,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517474173863</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Merge branch 'master' of https://github.com/still-neon/WebApp&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1517476184863</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1517476184863</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46824000" />
+    <option name="totallyTimeSpent" value="47511000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -992,7 +979,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
