@@ -11,7 +11,7 @@ import java.sql.Statement;
 public class UserDAO {
     private static final String TABLE_NAME = "users";
     private static final String[] COLUMNS_NAMES = {"id", "login", "password"};
-    private static final String GET_ENTITY_QUERY_FORMAT = "SELECT " + COLUMNS_NAMES[0] + " FROM " + TABLE_NAME + "WHERE (" + COLUMNS_NAMES[1] + "=%s) AND (" + COLUMNS_NAMES[2] + "=%s)";
+    private static final String GET_ENTITY_QUERY_FORMAT = "SELECT * FROM users WHERE login='%s' AND password='%s'";
 
     public UserInfo getUser(String login, String password) throws Exception {
         ResultSet rs = getResultSet(GET_ENTITY_QUERY_FORMAT, login, password);
