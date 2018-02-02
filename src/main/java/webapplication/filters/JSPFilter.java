@@ -17,7 +17,7 @@ public class JSPFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        //filterChain.doFilter(servletRequest, servletResponse);проверять что юзер залогинен, пользовательская сессия активная
+        filterChain.doFilter(servletRequest, servletResponse);//проверять что юзер залогинен, пользовательская сессия активная
     }
 
     @Override

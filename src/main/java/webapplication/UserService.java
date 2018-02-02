@@ -5,11 +5,6 @@ package webapplication;
  */
 public class UserService {
     public static boolean checkCredentials(String username, String password) throws Exception {
-        UserDAO userDAO = new UserDAO();
-
-        if (userDAO.getUser(username, password) != null)
-            return true;
-        else
-            return false;
+        return new UserDAO().getUser(username, password) != null ? true : false;
     }
 }

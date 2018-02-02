@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: EugenKrasotkin
   Date: 2/1/2018
@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Title</title>
-    <p>Welcome!</p>>
+    <p>Welcome dude! <%=new Date(System.currentTimeMillis())%></p>
 </head>
 <body>
 

@@ -13,7 +13,7 @@ public class UserDAO {
     private static final String[] COLUMNS_NAMES = {"id", "login", "password"};
     private static final String GET_ENTITY_QUERY_FORMAT = "SELECT * FROM users WHERE login='%s' AND password='%s'";
 
-    public UserInfo getUser(String login, String password) throws Exception {
+    public UserInfo getUser(String login, String password) throws Exception{
         ResultSet rs = getResultSet(GET_ENTITY_QUERY_FORMAT, login, password);
         return rs.next() ? toEntity(rs) : null;
     }
@@ -21,12 +21,11 @@ public class UserDAO {
 
     private ResultSet getResultSet(String query, String login, String password) throws SQLException {
         ResultSet rs;
-        Connection con = ConnectionFactory.getConnection();
-        Statement stm = con.createStatement();
-        rs = stm.executeQuery(String.format(query, login, password));
-        //try (Connection con = ConnectionFactory.getConnection()) {
 
-        //}
+        try (Connection con = ConnectionFactory.getConnection()) {
+            Statement stm = con.createStatement();
+            rs = stm.executeQuery(String.format(query, login, password));
+        }
         return rs;
     }
 

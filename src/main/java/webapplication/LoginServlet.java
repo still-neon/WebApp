@@ -10,9 +10,8 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
         try {
-            if (UserService.checkCredentials(request.getParameter("username"), request.getParameter("password"))) {
+            if (UserService.checkCredentials(request.getParameter("login"), request.getParameter("password"))) {
                 getServletContext().getRequestDispatcher("/welcome_page.jsp").forward(request, response);
             }
         } catch (Exception e) {
