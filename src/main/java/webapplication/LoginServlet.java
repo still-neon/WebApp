@@ -1,8 +1,6 @@
 package webapplication;
 
 import java.io.IOException;
-import java.io.PrintWriter;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -19,8 +17,7 @@ public class LoginServlet extends HttpServlet {
                 getServletContext().getRequestDispatcher("/welcome_page.jsp").forward(request, response);
             }
             else {
-                request.getRequestDispatcher("login_page.html");
-                //rd.include(request,response);
+                request.getRequestDispatcher("login_page.html").include(request,response);
             }
         } catch (Exception e) {
             e.printStackTrace();
