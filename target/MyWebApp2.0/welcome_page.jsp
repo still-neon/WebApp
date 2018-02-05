@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Welcome page</title>
     <p>Welcome dude! <%=new Date(System.currentTimeMillis())%></p>
 </head>
 <body>
