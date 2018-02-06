@@ -11,7 +11,6 @@ public class ConnectionFactory {
     public static final String PASSWORD = "still-neon84";
 
     public static Connection getConnection() throws SQLException {
-        //Class.forName("");
         DriverManager.registerDriver(new org.postgresql.Driver());
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }

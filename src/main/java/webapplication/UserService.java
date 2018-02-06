@@ -5,7 +5,7 @@ package webapplication;
  */
 public class UserService {
     public static boolean authenticate(String login, String password) throws Exception {
-        UserInfo userInfo = new UserDAO().getUser(login, password);
+        UserInfo userInfo = new UserDAO().getUser(login, password);//метод с енумом, пасс, фейл, сообщения. раздуплятор по резалту в дао
 
         return userInfo != null ? (userInfo.getLogin().equals(login) && userInfo.getPassword().equals(password)) : false;
     }

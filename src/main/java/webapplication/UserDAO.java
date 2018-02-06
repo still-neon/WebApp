@@ -14,7 +14,7 @@ public class UserDAO {
     private static final String GET_USER_QUERY_FORMAT = "SELECT * FROM users WHERE login='%s' AND password='%s'";
 
     public UserInfo getUser(String login, String password) throws Exception {
-        ResultSet rs = getResultSet(GET_USER_QUERY_FORMAT, login, password);
+        ResultSet rs = getResultSet(GET_USER_QUERY_FORMAT, login, password);//get back
 
         if (rs.next()) {
             return toEntity(rs);
@@ -33,16 +33,12 @@ public class UserDAO {
         return rs.next() ? toEntity(rs) : null;
     }
 
-    private ResultSet getResultSet(String query, String... creds) throws SQLException {
+    private ResultSet getResultSet(String query, String... creds) throws SQLException {//перделать, чтобы не зависило от параметров, named query
         ResultSet rs;
 
         try (Connection con = ConnectionFactory.getConnection()) {
             Statement stm = con.createStatement();
-            if (creds.length > 1) {
-                rs = stm.executeQuery(String.format(query, creds[0], creds[1]));
-            } else {
-                rs = stm.executeQuery(String.format(query, creds[0]));
-            }
+            rs = stm.executeQuery(String.format(query, creds));
         }
         return rs;
     }
