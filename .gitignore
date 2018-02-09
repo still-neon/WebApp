@@ -17,5 +17,3 @@ build/
 .idea/
 
 postgresql-42.2.1.jar
-
-workspace.xml

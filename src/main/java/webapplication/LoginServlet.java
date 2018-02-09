@@ -15,10 +15,10 @@ public class LoginServlet extends HttpServlet {
 
         try {
             UserService.AuthenticationState state = UserService.authenticate(request.getParameter("login"), request.getParameter("password"));
-            if(state.accessGranted) {
+            if(state.isAccessGranted()) {
                 getServletContext().getRequestDispatcher("/welcome_page.jsp").forward(request, response);
             } else {
-                out.print(state.messageText);
+                out.print(state.getMessageText());
                 request.getRequestDispatcher("login_page.html").include(request, response);
             }
         } catch (Exception e) {

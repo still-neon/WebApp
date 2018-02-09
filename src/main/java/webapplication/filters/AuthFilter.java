@@ -1,13 +1,9 @@
 package webapplication.filters;
 
-
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by EugenKrasotkin on 1/29/2018.
- */
 public class AuthFilter implements Filter {
     private FilterConfig filterConfig;
 

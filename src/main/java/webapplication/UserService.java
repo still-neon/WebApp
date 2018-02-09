@@ -1,5 +1,7 @@
 package webapplication;
 
+import lombok.Getter;
+
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -27,14 +29,16 @@ public class UserService {
     }
 
     public enum AuthenticationState {
-        PASS(true, PASS_MESSAGE), LOGIN_FAIL(false, LOGIN_FAIL_MESSAGE), PASSWORD_FAIL(false, PASSWORD_FAIL_MESSAGE), FAIL(false, FAIL_MESSAGE);
+        PASS(PASS_MESSAGE), LOGIN_FAIL(LOGIN_FAIL_MESSAGE), PASSWORD_FAIL(PASSWORD_FAIL_MESSAGE), FAIL(FAIL_MESSAGE);
+        @Getter
+        private String messageText;
 
-        public boolean accessGranted;
-        public String messageText;
-
-        AuthenticationState(boolean accessGranted, String messageText) {
-            this.accessGranted = accessGranted;
+        AuthenticationState(String messageText) {
             this.messageText = messageText;
+        }
+
+        public boolean isAccessGranted() {
+            return this == PASS;
         }
     }
 
