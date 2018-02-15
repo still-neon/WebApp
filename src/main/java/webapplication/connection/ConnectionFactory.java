@@ -1,4 +1,4 @@
-package webapplication;
+package webapplication.connection;
 
 import java.sql.*;
 

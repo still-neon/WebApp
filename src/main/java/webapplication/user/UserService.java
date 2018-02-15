@@ -1,4 +1,4 @@
-package webapplication;
+package webapplication.user;
 
 import lombok.Getter;
 

@@ -1,4 +1,6 @@
-package webapplication;
+package webapplication.servlets;
+
+import webapplication.user.UserService;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -19,7 +21,7 @@ public class LoginServlet extends HttpServlet {
                 getServletContext().getRequestDispatcher("/welcome_page.jsp").forward(request, response);
             } else {
                 out.print(state.getMessageText());
-                request.getRequestDispatcher("login_page.html").include(request, response);
+                request.getRequestDispatcher("/login_page.html").include(request, response);
             }
         } catch (Exception e) {
             e.printStackTrace();

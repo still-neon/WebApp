@@ -1,4 +1,6 @@
-package webapplication;
+package webapplication.user;
+
+import webapplication.connection.ConnectionFactory;
 
 import java.sql.*;
 

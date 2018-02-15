@@ -9,9 +9,12 @@
 <html>
 <head>
     <title>Welcome page</title>
-    <p>Welcome dude! <%=new Date(System.currentTimeMillis())%></p>
+    <p>Welcome dude! <%=new Date(System.currentTimeMillis())%>
+    </p>
 </head>
 <body>
-
+<form action="logout" method="get">
+    <input type="submit" value="Logout"/>
+</form>
 </body>
 </html>
